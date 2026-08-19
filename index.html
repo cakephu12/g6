@@ -10,6 +10,7 @@
     <!-- Masukkan script popunder Anda di bawah ini -->
     <!-- ========================================== -->
     <!-- <script src="link-popunder-anda.js"></script> -->
+    <script src="https://pl30215176.effectivecpmnetwork.com/5c/5e/d7/5c5ed799a8767c525306963272a265e6.js"></script>
 
     <style>
         /* Basic Reset & Styling */
@@ -81,12 +82,11 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
-            width: 160px; /* Ukuran standar banner */
+            width: 160px;
         }
         .side-banners.left { position: absolute; left: 20px; }
         .side-banners.right { position: absolute; right: 20px; }
         
-        /* Banner Placeholder Styling */
         .ad-placeholder {
             background-color: #f4f4f4;
             border: 1px dashed #ccc;
@@ -96,7 +96,7 @@
             font-size: 0.8rem;
         }
 
-        /* Center Content (Video & Top/Bottom Banners) */
+        /* Center Content */
         .content-center {
             display: flex;
             flex-direction: column;
@@ -123,7 +123,6 @@
             margin-top: -10px;
         }
 
-        /* Top & Bottom Banner Containers */
         .top-banners, .bottom-banners {
             display: flex;
             flex-direction: column;
@@ -131,38 +130,68 @@
             width: 100%;
         }
 
-        /* Floating Ad Styling */
-        .floating-ad {
+        /* ========================================== */
+        /* STYLE IKLAN MENGAMBANG (BLUR & BLOCK)      */
+        /* ========================================== */
+        
+        .modal-overlay {
             position: fixed;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-            text-align: center;
-            z-index: 9999;
-            border: 2px solid #1a1a2e;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 99999;
         }
-        .floating-ad h4 { margin-bottom: 15px; }
-        .floating-ad button {
-            margin: 0 5px;
-            padding: 8px 20px;
-            border: none;
-            border-radius: 5px;
+
+        .floating-ad-box {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+            text-align: center;
+            border: 2px solid #1a1a2e;
+            max-width: 90%;
+            width: 350px;
+        }
+        
+        .floating-ad-box h4 { margin-bottom: 20px; font-size: 1.1rem; line-height: 1.4; }
+        
+        .floating-ad-box .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        /* Mengubah link <a> agar terlihat seperti tombol */
+        .floating-ad-box a.ad-btn {
+            padding: 10px 20px;
+            border-radius: 6px;
             cursor: pointer;
             font-weight: bold;
+            flex: 1;
+            text-decoration: none; /* Hilangkan garis bawah link */
+            display: inline-block;
+            text-align: center;
         }
         .btn-yes { background-color: #4CAF50; color: white; }
         .btn-no { background-color: #f44336; color: white; }
 
+        body.modal-active {
+            overflow: hidden;
+        }
+
         @media (max-width: 900px) {
-            .side-banners { display: none; } /* Sembunyikan banner samping di layar kecil */
+            .side-banners { display: none; }
         }
     </style>
 </head>
-<body>
+<body class="modal-active">
 
     <!-- Navbar -->
     <header class="navbar">
@@ -177,38 +206,80 @@
     <!-- Main Content -->
     <div class="main-container">
         
-        <!-- ========================================== -->
-        <!-- TEMPAT IKLAN: BANNER KIRI (3 SLOT)         -->
-        <!-- ========================================== -->
+        <!-- Banner Kiri (3 SLOT) -->
         <div class="side-banners left">
-            <div class="ad-placeholder">Banner Kiri 1</div>
-            <div class="ad-placeholder">Banner Kiri 2</div>
-            <div class="ad-placeholder">Banner Kiri 3</div>
+            <div class="ad-placeholder"><script>
+  atOptions = {
+    'key' : '6a818507b15722f0ef5f67258be58423',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/6a818507b15722f0ef5f67258be58423/invoke.js"></script>
+</div>
+            <div class="ad-placeholder"><script>
+  atOptions = {
+    'key' : '6a818507b15722f0ef5f67258be58423',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/6a818507b15722f0ef5f67258be58423/invoke.js"></script>
+</div>
+            <div class="ad-placeholder"><script>
+  atOptions = {
+    'key' : 'e5e95255c7227b17dbf31ee8ca5f7403',
+    'format' : 'iframe',
+    'height' : 600,
+    'width' : 160,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/e5e95255c7227b17dbf31ee8ca5f7403/invoke.js"></script>
+</div>
         </div>
 
         <div class="content-center">
             
-            <!-- ========================================== -->
-            <!-- TEMPAT IKLAN: BANNER ATAS (2 SLOT)         -->
-            <!-- ========================================== -->
+            <!-- Banner Atas (2 SLOT) -->
             <div class="top-banners">
-                <div class="ad-placeholder" style="height: 90px;">Banner Atas 1</div>
-                <div class="ad-placeholder" style="height: 90px;">Banner Atas 2</div>
+                <div class="ad-placeholder" style="height: 90px;"><script>
+  atOptions = {
+    'key' : '84a6e3d8df12ba0b3d0ea3e9befa7c6b',
+    'format' : 'iframe',
+    'height' : 60,
+    'width' : 468,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/84a6e3d8df12ba0b3d0ea3e9befa7c6b/invoke.js"></script>
+</div>
+                <div class="ad-placeholder" style="height: 90px;"><script>
+  atOptions = {
+    'key' : '57f3d93e7d7843d11b12179d664999ad',
+    'format' : 'iframe',
+    'height' : 90,
+    'width' : 728,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/57f3d93e7d7843d11b12179d664999ad/invoke.js"></script>
+</div>
             </div>
 
             <!-- Video Player -->
             <div class="video-wrapper">
-                <!-- Ganti src dengan link video Anda -->
-                <video controls poster="https://cdn.aceimg.com/9Bkft4GlN.mp4">
-                    <source src="https://cdn.aceimg.com/9Bkft4GlN.mp4" type="video/mp4">
-                    Browser Anda tidak mendukung tag video.
+                <video controls poster="https://via.placeholder.com/350x600.png?text=Video+Thumbnail">
+                    <source src="dummy-video.mp4" type="video/mp4">
                 </video>
             </div>
             <div class="duration">0:00 / 2:32</div>
 
-            <!-- ========================================== -->
-            <!-- TEMPAT IKLAN: BANNER BAWAH (2 SLOT)        -->
-            <!-- ========================================== -->
+            <!-- Banner Bawah (2 SLOT) -->
             <div class="bottom-banners">
                 <div class="ad-placeholder" style="height: 90px;">Banner Bawah 1</div>
                 <div class="ad-placeholder" style="height: 90px;">Banner Bawah 2</div>
@@ -216,9 +287,7 @@
             
         </div>
 
-        <!-- ========================================== -->
-        <!-- TEMPAT IKLAN: BANNER KANAN (3 SLOT)        -->
-        <!-- ========================================== -->
+        <!-- Banner Kanan (3 SLOT) -->
         <div class="side-banners right">
             <div class="ad-placeholder">Banner Kanan 1</div>
             <div class="ad-placeholder">Banner Kanan 2</div>
@@ -228,28 +297,40 @@
     </div>
 
     <!-- ========================================== -->
-    <!-- TEMPAT IKLAN: MENGAMBANG 1 (PERTANYAAN)    -->
+    <!-- TEMPAT IKLAN: MENGAMBANG (BLUR OVERLAY)    -->
     <!-- ========================================== -->
-    <div class="floating-ad" id="floatingAd">
-        <h4>Apakah Anda ingin menonton konten premium kami?</h4>
-        <!-- Ubah link di dalam tanda kutip tunggal ('...') sesuai link iklan/tujuan Anda -->
-        <button class="btn-yes" onclick="handleFloatingAd('https://link-iklan-pilihan-1.com')">Ya, Tentu</button>
-        <button class="btn-no" onclick="handleFloatingAd('https://link-iklan-pilihan-2.com')">Mungkin Nanti</button>
+    <div class="modal-overlay" id="floatingAdOverlay">
+        <div class="floating-ad-box">
+            <h4>Apakah Anda ingin menonton konten premium kami?</h4>
+            <div class="btn-container">
+                <!-- 
+                    Pilihan 1:
+                    1. Ganti "https://link-iklan-pilihan-1.com" dengan link asli
+                    2. target="_blank" artinya membuka tab baru saat diklik 
+                -->
+                <a href="https://link-iklan-pilihan-1.com" target="_blank" class="ad-btn btn-yes" onclick="closeFloatingAd()">Ya, Tentu</a>
+                
+                <!-- 
+                    Pilihan 2:
+                    1. Ganti "https://link-iklan-pilihan-2.com" dengan link asli
+                    2. target="_blank" artinya membuka tab baru saat diklik 
+                -->
+                <a href="https://link-iklan-pilihan-2.com" target="_blank" class="ad-btn btn-no" onclick="closeFloatingAd()">Mungkin Nanti</a>
+            </div>
+        </div>
     </div>
 
-    <!-- Script untuk menyembunyikan Iklan Mengambang saat diklik -->
     <script>
-        function handleFloatingAd(url) {
-            // 1. Sembunyikan elemen iklan
-            document.getElementById('floatingAd').style.display = 'none';
-            // 2. Buka link iklan di tab baru
-            window.open(url, '_blank');
+        // Fungsi ini HANYA untuk menyembunyikan kotak iklan dan efek blur
+        // (Pembukaan link sudah otomatis diurus oleh atribut href="..." di atas)
+        function closeFloatingAd() {
+            document.getElementById('floatingAdOverlay').style.display = 'none';
+            document.body.classList.remove('modal-active');
         }
     </script>
 
     <!-- ========================================== -->
     <!-- TEMPAT SCRIPT IKLAN: SOCIAL BAR 1          -->
-    <!-- Masukkan script social bar tepat sebelum tag </body> -->
     <!-- ========================================== -->
     <!-- <script src="link-social-bar-anda.js"></script> -->
 
